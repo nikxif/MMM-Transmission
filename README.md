@@ -1,24 +1,24 @@
 # MMM-Transmission
 
-A MagicMirror module that connects to the Transmission BitTorrent client and allows you to monitor the progress of your torrents from your MagicMirror installation!
+A MagicMirror module that connects to the **Transmission BitTorrent client** and allows you to monitor the progress of your torrents from your MagicMirror installation!
 
-The module is created with the intent of monitoring Transmission, not updating the client (e.g. pausing downloads).
+Using MMM-Transmission, you can display your current list of torrents, along with their status, progress and estimated time of completion, and a discreet progress bar. The module is created with the intent of monitoring Transmission, not updating the client (e.g. pausing downloads).
 
-I am in no way associated with the Transmission project but can recommend it as a solid, lightweight solution for your RaspberryPi.
+*I am not associated with the Transmission project but can recommend it as a solid, lightweight solution for your RaspberryPi.*
 
-# Requirements
+## Requirements
 1. A working MagicMirror installation.
-2. A working and configured Transmission installation.
+2. A working and configured [Transmission](https://transmissionbt.com/) installation.
 3. A working installation of Python 3.
 4. The transmission-rpc Python module. You can install it using ```$ sudo pip3 install transmission-rpc``` on your terminal.
 
-# Installation
+## Installation
 1. Open a terminal window and navigate to the MagicMirror modules directory: ```$ cd MagicMirror/modules```
 2. Clone the MMM-Transmission repo: ```$ git clone https://github.com/nikxif/MMM-Transmission```
 3. Change the directory to the config folder: ```$ cd ~/MagicMirror/config```
 4. Modify your config.js file and add the MMM-Transmission module: ```$ sudo nano config.js```
 
-# Configuration
+## Configuration
 The basic configuration in the ```config.js``` file is this:
 
 ```
@@ -55,10 +55,10 @@ The ```titleColor```, ```propertyColor``` and ```progressColor``` control the co
 
 ```freq``` determines how frequently data will be pulled from the Transmission client, in milliseconds.
 
-# Known issues
+## Known issues
 None at present time.
 
-# Next steps
+## Next steps
 1. Adding the ability to turn off/modify progress bars
 2. Adding the display of download/upload rates
 3. Adding buffering for the Transmission client JSON results
