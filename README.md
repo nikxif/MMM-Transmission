@@ -32,24 +32,24 @@ The basic configuration in the ```config.js``` file is this:
 The possible configs (and their defaults) at this time are shown below:
 
 ```
-    config: {
-        TBTParams: {
-			host: "localhost",
-			port: "9091",
-			username: "pi",
-			password: "raspberry"
-		},
-        freq: 10000,
-        maxDisplayed: 3,
-    	titleColor: "#fff",
-		propertyColor: "#666",
-		progressColor: "#fff"
-    }
+config: {
+    TBTParams: {
+        host: "localhost",
+        port: "9091",
+        username: "pi",
+        password: "raspberry"
+    },
+    freq: 10000,
+    maxDisplayed: 3,
+    titleColor: "#fff",
+    propertyColor: "#666",
+    progressColor: "#fff"
+}
  ```
 
 Initially, the module is trying to connect to the Transmission client by using the default host, port, username and password settings. If you have updated the default pi/raspberry username and password combination (and you should!) you should update these by using the ```TBTParams``` setting.
 
-The ```maxDisplayed``` parameter can be set to change the max number of torrents displayed on the MM simultaneously (default: 3). If there are more torrents than allowed, the actively downloading torrents will be displayed higher up; among those, the torrents with the most progress will be shown first.
+The ```maxDisplayed``` parameter can be set to change the max number of torrents displayed on the MM simultaneously (default: 3). If there are more torrents than allowed, priority will be given to downloading torrents first; then to the ones with higher progress.
 
 The ```titleColor```, ```propertyColor``` and ```progressColor``` control the color of the torrent titles, torrent properties and progress bars respectively. At this moment, turning off the progress bars is not possible through the config file.
 
