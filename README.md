@@ -4,6 +4,8 @@ A MagicMirror module that connects to the **Transmission BitTorrent client** and
 
 Using MMM-Transmission, you can display your current list of torrents, along with their status, progress and estimated time of completion, and a discreet progress bar. The module is created with the intent of monitoring Transmission, not updating the client (e.g. pausing downloads).
 
+![MMM-Transmission screenshot](https://github.com/nikxif/MMM-Transmission/blob/main/MMM-Transmission.jpg)
+
 *I am not associated with the Transmission project but can recommend it as a solid, lightweight solution for your RaspberryPi.*
 
 ## Requirements
