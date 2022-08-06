@@ -29,7 +29,7 @@ The basic configuration in the ```config.js``` file is this:
 },
  ```
 
-The possible configs (and their defaults) at this time are shown below:
+The possible configs (and their defaults) are shown below:
 
 ```
 config: {
@@ -54,3 +54,12 @@ The ```maxDisplayed``` parameter can be set to change the max number of torrents
 The ```titleColor```, ```propertyColor``` and ```progressColor``` control the color of the torrent titles, torrent properties and progress bars respectively. At this moment, turning off the progress bars is not possible through the config file.
 
 ```freq``` determines how frequently data will be pulled from the Transmission client, in milliseconds.
+
+# Known issues
+None at present time.
+
+# Next steps
+1. Adding the ability to turn off/modify progress bars
+2. Adding the display of download/upload rates
+3. Adding buffering for the Transmission client JSON results
+4. Adding more ways to sort the torrent list
